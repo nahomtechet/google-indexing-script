@@ -156,32 +156,4 @@ export GIS_QUOTA_RPM_RETRY=true
 
 </details>
 
-<details>
-<summary>As a npm module</summary>
 
-```javascript
-import { index } from 'google-indexing-script'
-import serviceAccount from './service_account.json'
-
-index('seogets.com', {
-  client_email: serviceAccount.client_email,
-  private_key: serviceAccount.private_key
-  quota: {
-    rpmRetry: true
-  }
-})
-  .then(console.log)
-  .catch(console.error)
-```
-
-</details>
-
-## 📄 License
-
-MIT License
-
-## 💖 Sponsor
-
-This project is sponsored by [SEO Gets](https://seogets.com)
-
-![](https://seogets.com/og.png)
